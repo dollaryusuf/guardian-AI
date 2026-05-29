@@ -5,7 +5,6 @@
 
 import express from "express";
 import path from "path";
-import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
 
@@ -137,6 +136,7 @@ app.post("/api/analyse-accident", async (req, res) => {
 
 if (process.env.NODE_ENV !== "production") {
   async function startViteDev() {
+    const { createServer: createViteServer } = await import("vite");
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
@@ -148,14 +148,17 @@ if (process.env.NODE_ENV !== "production") {
   }
   startViteDev().catch(console.error);
 } else {
-  const distPath = path.join(process.cwd(), "dist");
+  const distPath = path.join(process.cwd(), 'dist');
   app.use(express.static(distPath));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(distPath, "index.html"));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'));
   });
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`[GuardianAI Fullstack Engine] Prod Server booting under port ${PORT}`);
-  });
+  
+  if (!process.env.VERCEL) {
+    app.listen(PORT, "0.0.0.0", () => {
+      console.log(`[GuardianAI Fullstack Engine] Prod Server booting under port ${PORT}`);
+    });
+  }
 }
 
 export default app;
