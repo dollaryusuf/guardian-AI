@@ -1,8 +1,37 @@
 {
   "name": "GuardianAI",
-  "description": "Decentralized DePIN dashcam claims engine on IoTeX networks integrated with ZeroGravity (0G) storage and AI inference.",
-  "requestFramePermissions": [],
+  "version": "1.0.0",
+  "description": "High-fidelity DePIN Forensic & Insurance Settlement Engine. Orchestrating machine-to-machine trust through IoTeX ioID, W3bstream telemetry, and 0G decentralized storage/AI grids.",
+  "author": "Guardian-Dev-Node",
+  "license": "Apache-2.0",
+  "category": "DePIN / RWA",
+  "tags": [
+    "IoTeX",
+    "0G-Network",
+    "W3bstream",
+    "Machine-Identity",
+    "AI-Inference",
+    "Real-World-Assets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dollaryusuf/guardian-AI"
+  },
+  "homepage": "https://guardian-ai-9wof.vercel.app/",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
   "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
+    "BLOCKCHAIN_LEDGER_INTEROP",
+    "DECENTRALIZED_STORAGE_INTEGRATION",
+    "OFF_CHAIN_AI_INFERENCE_ORACLE",
+    "MACHINE_IDENTITY_PROVISIONING"
+  ],
+  "infrastructure": {
+    "l1_network": "IoTeX Testnet",
+    "middleware": "W3bstream",
+    "data_availability": "0G Storage",
+    "inference_node": "0G Serving"
+  }
 }

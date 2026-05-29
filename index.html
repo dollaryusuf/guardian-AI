@@ -1,13 +1,78 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" style="background-color: #020617;">
   <head>
     <meta charset="UTF-8" />
+    
+    <!-- High-Tech Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>GuardianAI | Decentralized Autonomous Claims Engine</title>
+    <meta name="title" content="GuardianAI | Decentralized Autonomous Claims Engine" />
+    <meta name="description" content="Autonomous DePIN safety and insurance settlement layer bridging IoTeX and 0G for verifiable, real-time accident forensics." />
+    <meta name="keywords" content="DePIN, IoTeX, 0G, Blockchain, AI, Insurance, IoT, W3bstream, RWA" />
+
+    <!-- Open Graph / Facebook / Discord (For professional sharing) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://guardian-ai-9wof.vercel.app/" />
+    <meta property="og:title" content="GuardianAI | DePIN Insurance Engine" />
+    <meta property="og:description" content="Verifiable real-time accident forensics and on-chain settlement on IoTeX." />
+    <meta property="og:image" content="https://guardian-ai-9wof.vercel.app/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="GuardianAI | DePIN Insurance Engine" />
+    <meta property="twitter:description" content="Autonomous insurance settlement powered by IoTeX and 0G." />
+
+    <!-- Google Fonts: Inter (UI) & JetBrains Mono (Data/Logs) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Pre-load Background Styling to prevent white-flash -->
+    <style>
+      :root {
+        background-color: #020617;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #020617;
+        color: #f8fafc;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar for a high-tech feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020617;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+    </style>
   </head>
   <body>
+    <!-- Fallback for users with disabled scripts -->
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>The GuardianAI Forensic Dashboard requires JavaScript to process real-time telemetry and 0G AI inference.</p>
+      </div>
+    </noscript>
+
     <div id="root"></div>
+
+    <!-- Main Entry Point -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
