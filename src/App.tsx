@@ -6,7 +6,7 @@
 import { useState, useEffect } from "react";
 import { Activity, ShieldCheck, Cpu, HardDrive, Terminal, Laptop, Settings, ExternalLink, HelpCircle, AlertOctagon, Sparkles, X, History } from "lucide-react";
 import { Toaster } from "sonner";
-import { Machine, Incident } from "./types";
+import { Machine, Incident } from "./types/types";
 import LiveTelemetrySimulator from "./components/LiveTelemetrySimulator";
 import ClaimsCenter from "./components/ClaimsCenter";
 import MachineIDRegistry from "./components/MachineIDRegistry";

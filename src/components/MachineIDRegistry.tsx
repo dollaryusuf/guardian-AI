@@ -5,7 +5,7 @@
 
 import React, { useState } from "react";
 import { Plus, Disc, ShieldAlert, Coins, Library, User, Laptop } from "lucide-react";
-import { Machine } from "../types";
+import { Machine } from "../types/types";
 
 interface MachineIDRegistryProps {
   machines: Machine[];

@@ -5,9 +5,9 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Play, Pause, Radio, Zap, Server, Shield, Database, Cpu, HardDrive, CheckCircle2, Loader2, AlertTriangle, ShieldCheck, Share2, Sparkles, ExternalLink, X } from "lucide-react";
-import { Telemetry, WorkflowStep, Machine, Incident } from "../types";
+import { Telemetry, WorkflowStep, Machine, Incident } from "../types/types";
 import { ethers } from "ethers";
-import { triggerSimulation, getScenarioDetails } from "../simulationEngine";
+import { triggerSimulation, getScenarioDetails } from "../simulation/simulationEngine";
 
 interface LiveTelemetrySimulatorProps {
   activeMachine: Machine | null;

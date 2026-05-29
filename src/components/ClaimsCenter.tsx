@@ -27,7 +27,7 @@ import {
   Search,
   Link as LinkIcon
 } from "lucide-react";
-import { Incident } from "../types";
+import { Incident } from "../types/types";
 
 interface ClaimsCenterProps {
   incidents: Incident[];

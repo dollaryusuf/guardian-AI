@@ -4,7 +4,7 @@
  */
 
 import { toast } from "sonner";
-import { Incident } from "./types";
+import { Incident } from "../types/types";
 
 // 1. Definition of the 'Incident' Type inside simulationEngine or re-exported to safeguard imports
 export type SimulationIncident = Incident;
