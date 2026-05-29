@@ -1,0 +1,8 @@
+{
+  "name": "GuardianAI",
+  "description": "Decentralized DePIN dashcam claims engine on IoTeX networks integrated with ZeroGravity (0G) storage and AI inference.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
